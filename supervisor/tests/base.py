@@ -615,6 +615,7 @@ class DummyMedusaServerLogger:
 class DummyMedusaServer:
     def __init__(self):
         self.logger = DummyMedusaServerLogger()
+        self.base_path = '/'
 
 class DummyMedusaChannel:
     def __init__(self):
