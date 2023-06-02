@@ -1,3 +1,16 @@
+注意
+====
+这是一个更改过的supervisor-4.2.5应用，添加了路由配置字段！
+
+::
+
+ 在inet_http_server下配置base_path字段
+ [inet_http_server]        ; inet (TCP) server disabled by default
+ port=*:9001               ; ip_address:port specifier, *:port for all iface
+ username=******           ; default is no username (open server)
+ password=******           ; default is no password (open server)
+ base_path=/path/          ; (default is /)
+
 Supervisor
 ==========
 
